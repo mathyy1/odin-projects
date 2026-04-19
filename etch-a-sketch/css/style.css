@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #f5e6d3;
+    --grid-border-color: #c0392b;
+    --cell-bg-color: #fdfaf6;
+    --btn-color: #c0392b;
+    --text-color: #FDFAF6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    background-color: var(--bg-color);
+
+    font-family: Roboto;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--btn-color);
+}
+
+button {
+    width: 200px;
+    height: 70px;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: all 200ms;
+
+    border: 2px solid var(--btn-color);
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--btn-color);
+    background-color: var(--bg-color);
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    border: 5px solid var(--grid-border-color);
+    border-radius: 5px;
+    background-color: var(--text-color);
+
+    cursor: cell;
+    user-select: none;
+}
+
+.selections {
+    display: flex;
+    gap: 20px;
+}
+
+.grid-cell {
+    outline: 1px solid grey;
+    background-color: var(--cell-bg-color);
+}
+
+

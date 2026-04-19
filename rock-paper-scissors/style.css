@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;;
+    background-color: #202020;
+    font-family: Roboto;
+}
+
+.wrapper {
+    background-color: #e5e5e5;
+    padding: 20px;
+    min-width: 600px;
+    min-height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#results {
+    display: flex;
+    font-size: 22px;
+    font-weight: 900;
+    color: #202020;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.card {
+    text-align: center;
+    width: 150px;
+}
+
+.card dt {
+    font-weight: 400;
+}
+
+.card dd {
+    font-weight: 600;
+}
+
+#selections {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 1px solid #202020;
+    background-color: #202020;
+    color: #e5e5e5;
+    cursor: pointer;
+    min-width: 120px;
+    font-size: 20px;
+
+    transition: all 200ms;
+}
+
+button:hover {
+    color: #202020;
+    background-color: #e5e5e5;
+}
+
+#text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #202020;
+}
+
+#computer-choice {
+    font-size: 20px;
+    font-weight: 400;
+    color: #202020;
+}
+
+
+
